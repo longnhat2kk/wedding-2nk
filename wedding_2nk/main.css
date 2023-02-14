@@ -1,0 +1,415 @@
+/* https: //source.unsplash.com/random/ */
+
+:root {
+    --text-color-white: #FFFFFF;
+    --text-color-black-light: #3a3a3a;
+    --text-color-matte-black: #4B4F58;
+    --text-color-black: #000;
+    --color-dark-yellow: #dba367;
+}
+
+h3 {
+    font-size: 2.5rem !important;
+    color: var(--text-color-black-light);
+}
+
+p {
+    color: var(--text-color-matte-black);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-wrap {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 56.25%;
+}
+
+.img-wrap img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    transform: translateZ(0);
+    margin: 0 auto;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.heart {
+    position: relative;
+    display: inline-block;
+}
+
+.heart svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-dark-yellow);
+}
+
+.heart::after {
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 1px;
+    background-color: var(--color-dark-yellow);
+    right: -9rem;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.heart::before {
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 1px;
+    background-color: var(--color-dark-yellow);
+    left: -4rem;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+/*Start header */
+.w-wedding-header {
+    height: 90px;
+    display: flex;
+    margin: auto;
+}
+
+.w-wedding-header .logo {
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.w-wedding-header .logo svg {
+    max-width: 15vw;
+}
+
+/*End header */
+
+/* **************************************** */
+/*Start w-banner-introduce */
+.w-banner-introduce {
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.w-banner-introduce::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+    content: '';
+    z-index: -1;
+}
+
+.w-banner-introduce .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.w-banner-introduce .content .name-lover {
+    font-size: 4rem;
+    color: var(--text-color-white);
+}
+
+.w-banner-introduce .content span {
+    position: relative;
+    color: var(--text-color-white);
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+    width: max-content;
+    font-size: 1.5rem;
+
+}
+
+.w-banner-introduce .content span::after {
+    content: '';
+    position: absolute;
+    right: -5rem;
+    top: 50%;
+    width: 4rem;
+    height: 1px;
+    background-color: var(--text-color-white);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.w-banner-introduce .content span::before {
+    content: '';
+    position: absolute;
+    left: -5rem;
+    top: 50%;
+    width: 4rem;
+    height: 1px;
+    background-color: var(--text-color-white);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.w-banner-introduce .content .sub-text {
+    color: var(--text-color-white);
+}
+
+/*End w-banner-introduce */
+
+/* ****************************************** */
+/* Start w-groom-and-bride */
+.w-groom-and-bride {
+    background-attachment: fixed;
+}
+
+.w-groom-and-bride .heading {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.w-groom-and-bride .heading .sub-title {
+    font-size: 1.25rem;
+    color: var(--text-color-matte-black);
+}
+
+.w-groom-and-bride .heading .title {
+    margin-bottom: 1.5rem;
+}
+
+.w-groom-and-bride .content {
+    text-align: center;
+}
+
+.w-groom-and-bride .content .avt {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+}
+
+.w-groom-and-bride .content .name {
+    margin-top: 1.5rem;
+}
+
+.w-groom-and-bride .content .introduce-text {
+    width: 90%;
+    margin: auto;
+}
+
+.w-groom-and-bride .content .social-network-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-groom-and-bride .content .social-network-list li {
+    margin: 0 .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-dark-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+}
+
+.w-groom-and-bride .content .social-network-list li a {
+    line-height: 1rem;
+}
+
+.w-groom-and-bride .content .social-network-list li a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-color-white);
+}
+
+.w-groom-and-bride .btn-rsvp {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-dark-yellow);
+    padding: 0.6rem 3rem;
+    border-radius: 30px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+/* End w-groom-and-bride */
+
+/* Start w-captured-moments */
+.w-captured-moments .heading {
+    text-align: center;
+}
+
+.w-captured-moments .sub-text {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.w-captured-moments .content-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-captured-moments .content-lists .items {
+    margin: 0 .5rem;
+}
+
+.w-captured-moments .content-lists .items:last-child,
+.w-captured-moments .content-lists .items:first-child {
+    margin-left: 0;
+}
+
+.w-captured-moments .content-lists .items .img-items {
+    margin: 1rem 0;
+}
+
+.w-captured-moments .content-lists .items .img-items img {
+    transition: all .2s ease-in;
+}
+
+.w-captured-moments .content-lists .items .img-items.text-item {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.w-captured-moments .content-lists .items .img-items:hover img {
+    transform: translateY(-.8rem) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* End w-captured-moments */
+
+/* ************************************** */
+/*Start w-our-love-story */
+.w-our-love-story {
+    position: relative;
+    height: 100vh;
+}
+
+.w-our-love-story .heading {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.w-our-love-story .heading .sub-text {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.w-our-love-story .content-items {
+    text-align: center;
+}
+
+.w-our-love-story .content-items .date-love {
+    display: block;
+    font-size: 2rem;
+    color: var(--text-color-black-light);
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+}
+
+.w-our-love-story .content-items .title {
+    font-size: 3rem;
+    color: var(--color-dark-yellow);
+}
+
+.w-our-love-story .content-items p {
+    margin-top: 1.5rem;
+}
+
+.w-our-love-story .content-items .heart::after,
+.w-our-love-story .content-items .heart::before {
+    width: 2rem;
+}
+
+.w-our-love-story .content-items .heart::after {
+    right: -4rem;
+}
+
+.w-our-love-story .content-items .heart::before {
+    left: -2rem;
+}
+
+.w-our-love-story .video-love {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    width: 50vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*End w-our-love-story */
+
+/* **************************************** */
+/*Sart w-reply-attending */
+.w-reply-attending {
+    margin-top: 35vh;
+}
+
+.w-reply-attending .heaiding {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.w-reply-attending .sub-text {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.w-reply-attending .attending-form {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 3rem;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.w-reply-attending .attending-form .btn-send {
+    margin: 2rem auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-dark-yellow);
+    padding: 0.6rem 3rem;
+    border-radius: 30px;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--text-color-white);
+}
+
+/*End w-reply-attending */
