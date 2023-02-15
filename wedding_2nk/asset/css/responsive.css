@@ -1,11 +1,249 @@
+:root {
+    --text-color-white: #FFFFFF;
+    --text-color-black-light: #3a3a3a;
+    --text-color-matte-black: #4B4F58;
+    --text-color-black: #000;
+    --color-dark-yellow: #dba367;
+}
+
 /* PC */
 @media (min-width: 1024px) {}
 
 /* Mobile - Tablet */
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+    .w-captured-moments .content-lists .items {
+        width: calc(100% / 3);
+        margin: 0;
+    }
+
+    .w-captured-moments .content-lists .items.item-between {
+        margin: 0 1rem;
+    }
+
+    .w-our-love-story .heading .sub-text {
+        width: 100%;
+    }
+
+    .w-celebrate-our-love .btn-get-direction {
+        display: flex;
+        align-items: center;
+        color: var(--color-dark-yellow);
+    }
+
+    .w-celebrate-our-love .btn-get-direction svg {
+        margin-right: 5px;
+    }
+}
 
 /* Tablet */
-@media (min-width:740px) and (max-width: 1023px) {}
+@media (min-width:740px) and (max-width: 1023px) {
+    .w-our-love-story .content-items .title {
+        font-size: 2rem;
+    }
+
+    .w-our-love-story .content-items .date-love {
+        font-size: 1.25rem;
+    }
+
+    .w-our-love-story .content-items .heart {
+        margin-top: -1rem;
+        display: block;
+    }
+
+    .w-wedding-header .logo svg {
+        max-width: 34vw;
+    }
+
+    .w-our-love-story .video-love {
+        width: 80vw;
+    }
+
+    .w-reply-attending {
+        margin-top: 15vh;
+    }
+
+    .w-reply-attending .attending-form {
+        width: 100%;
+    }
+
+    .w-expecting-you {
+        height: 60vh;
+        margin-top: 11rem;
+    }
+}
 
 /* Mobile */
-@media (max-width:739px) {}
+@media (max-width:739px) {
+    h3 {
+        font-size: 2rem !important;
+    }
+
+    .heart svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .sub-text {
+        width: 100% !important;
+    }
+
+    .w-wedding-header .logo svg {
+        max-width: 60vw;
+    }
+
+    .w-banner-introduce .content .name-lover {
+        font-size: 2.5rem;
+    }
+
+    .w-banner-introduce .content span {
+        font-size: 1.25rem;
+    }
+
+    .w-banner-introduce .content .sub-text {
+        font-size: 2rem !important;
+    }
+
+    .w-groom-and-bride .heading {
+        margin-top: 0;
+    }
+
+    .w-groom-and-bride .content .name {
+        font-size: 1.75rem !important;
+    }
+
+    .w-groom-and-bride .content .avt {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .w-captured-moments .sub-text {
+        width: 100%;
+    }
+
+    .w-groom-and-bride .btn-rsvp {
+        margin-bottom: 0;
+    }
+
+    .w-captured-moments .content-lists {
+        margin: 1.5rem 0;
+    }
+
+    .w-captured-moments .content-lists .items .img-items.text-item {
+        height: 15vh;
+        font-size: 1rem;
+    }
+
+    .w-captured-moments .content-lists .items .img-items {
+        margin: 0.5rem 0;
+    }
+
+    .w-captured-moments .content-lists .items.item-between {
+        margin: 0 .5rem;
+    }
+
+    .w-our-love-story .heading {
+        margin: 0;
+    }
+
+    .w-our-love-story .content-items .date-love {
+        font-size: 1.2rem;
+    }
+
+    .w-our-love-story .content-items .title {
+        font-size: 2rem;
+    }
+
+    .w-our-love-story .video-love {
+        bottom: -3rem;
+        width: 80vw;
+        height: 12rem;
+    }
+
+    .w-our-love-story .content-items {
+        border-top: 1px solid #00000036;
+        padding-top: 2rem;
+    }
+
+    .w-our-love-story {
+        padding-bottom: 5rem;
+    }
+
+    .w-our-love-story .video-love a::after {
+        font-size: 5rem;
+    }
+
+    .w-our-love-story .video-love a::before {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .w-reply-attending {
+        margin-top: 8vh;
+    }
+
+    .w-reply-attending .attending-form {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .w-celebrate-our-love .heading .title {
+        font-size: 2rem;
+    }
+
+    .w-celebrate-our-love .heading .sub-title {
+        font-size: 1.25rem;
+    }
+
+    .w-celebrate-our-love .content {
+        width: 90%;
+        padding: 0;
+    }
+
+    .w-celebrate-our-love .content .content-right,
+    .w-celebrate-our-love .content .content-left {
+        padding: 1rem;
+    }
+
+    .w-celebrate-our-love .content .content-right .content-title,
+    .w-celebrate-our-love .content .content-left .content-title {
+        font-size: 1.5rem !important;
+    }
+
+    .w-celebrate-our-love .btn-get-direction {
+        color: var(--color-dark-yellow);
+    }
+
+    .w-expecting-you {
+        margin-top: 10rem;
+        height: 65vh;
+    }
+
+    .w-expecting-you .couple-photo {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .w-expecting-you .title {
+        font-size: 2.1rem;
+    }
+
+    .w-expecting-you .social-network-list {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .w-expecting-you .btn-live {
+        display: flex;
+        align-items: center;
+        color: var(--color-dark-yellow);
+        margin-top: 4rem;
+    }
+
+    .w-expecting-you .btn-live svg {
+        margin-right: 4px;
+    }
+}
