@@ -668,6 +668,38 @@ img {
     align-items: center;
     color: var(--text-color-white);
     background-color: var(--color-dark-yellow);
+    margin-top: 2rem;
 }
 
 /* End w-wedding-footer */
+.player-music {
+    width: 60px;
+    height: 60px;
+    background-color: #dba367;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    left: 2rem;
+    transform: translateX(-50%);
+    top: 50%;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.player.active .play {
+    display: none;
+}
+
+.player.active .pause {
+    display: block;
+}
+
+.player .play {
+    display: block;
+}
+
+.player .pause {
+    display: none;
+}
