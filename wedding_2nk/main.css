@@ -201,8 +201,8 @@ img {
 }
 
 .w-groom-and-bride .content .avt {
-    width: 20vw;
-    height: 20vw;
+    width: 20rem;
+    height: 20rem;
     margin: auto;
 }
 
@@ -370,7 +370,7 @@ img {
     left: 50%;
     transform: translate(-50%, 26%);
     bottom: -6rem;
-    width: 50vw;
+    width: 50rem;
     border-radius: 10px;
     overflow: hidden;
     height: 24rem;
@@ -504,7 +504,7 @@ img {
 }
 
 .w-celebrate-our-love .content {
-    width: 70vw;
+    width: 70rem;
     background-color: #FFFFFF;
     border-radius: 4px;
     display: flex;
@@ -585,7 +585,6 @@ img {
 /* *********************************************** */
 /* Start w-expecting-you */
 .w-expecting-you {
-    height: 100vh;
     margin-top: 14rem;
     display: flex;
     justify-content: center;
@@ -594,8 +593,8 @@ img {
 }
 
 .w-expecting-you .couple-photo {
-    width: 30vw;
-    height: 30vw;
+    width: 30rem;
+    height: 30rem;
 }
 
 .w-expecting-you .title {
